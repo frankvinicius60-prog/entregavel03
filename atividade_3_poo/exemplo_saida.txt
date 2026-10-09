@@ -1,0 +1,35 @@
+Banco Acadêmico: 10 contas cadastradas
+
+Conta 1001: tarifa descontada de R$ 10.00
+ContaCorrente 1001 | Cliente 1 | Saldo: R$ 990.00 | Tarifa: R$ 10.00
+Conta 1002: rendimento de R$ 5.00
+ContaPoupanca 1002 | Cliente 2 | Saldo: R$ 1005.00 | Taxa: 0.50%
+Conta 1003: tarifa descontada de R$ 10.00
+ContaCorrente 1003 | Cliente 3 | Saldo: R$ 990.00 | Tarifa: R$ 10.00
+Conta 1004: rendimento de R$ 5.00
+ContaPoupanca 1004 | Cliente 4 | Saldo: R$ 1005.00 | Taxa: 0.50%
+Conta 1005: tarifa descontada de R$ 10.00
+ContaCorrente 1005 | Cliente 5 | Saldo: R$ 990.00 | Tarifa: R$ 10.00
+Conta 1006: rendimento de R$ 5.00
+ContaPoupanca 1006 | Cliente 6 | Saldo: R$ 1005.00 | Taxa: 0.50%
+Conta 1007: tarifa descontada de R$ 10.00
+ContaCorrente 1007 | Cliente 7 | Saldo: R$ 990.00 | Tarifa: R$ 10.00
+Conta 1008: rendimento de R$ 5.00
+ContaPoupanca 1008 | Cliente 8 | Saldo: R$ 1005.00 | Taxa: 0.50%
+Conta 1009: tarifa descontada de R$ 10.00
+ContaCorrente 1009 | Cliente 9 | Saldo: R$ 990.00 | Tarifa: R$ 10.00
+Conta 1010: rendimento de R$ 5.00
+ContaPoupanca 1010 | Cliente 10 | Saldo: R$ 1005.00 | Taxa: 0.50%
+
+Após depósito e saque: ContaCorrente 1001 | Cliente 1 | Saldo: R$ 1020.00 | Tarifa: R$ 10.00
+Representação para depuração: ContaCorrente(numero='1001', titular=Cliente(nome='Cliente 1', email='cliente1@example.com'), saldo='1020.00')
+
+Demonstração de entradas inválidas:
+Depósito -10 rejeitado: O valor deve ser finito e não negativo.
+Depósito 'abc' rejeitado: Informe um valor numérico válido.
+Depósito 'NaN' rejeitado: O valor deve ser finito e não negativo.
+Saque rejeitado: Saldo insuficiente para o saque.
+Alteração de e-mail rejeitada: E-mail inválido.
+Alteração de saldo rejeitada: O valor deve ser finito e não negativo.
+
+Estado preservado: ContaCorrente 1001 | Cliente 1 | Saldo: R$ 1020.00 | Tarifa: R$ 10.00
